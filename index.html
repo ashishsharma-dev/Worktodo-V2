@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Worktodo: Add Your Task Here</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="nav-section">
+      <div class="nightmode-toggler">
+        <div class="userNameBox">
+          <span class="greetings">Greetings,</span>
+          <span
+            ><input class="userName" value="" placeholder="Name Here..."
+          /></span>
+        </div>
+        <div class="icons">
+          <i id="day" class="fa-solid fa-sun"></i>
+          <i id="night" class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <header class="todoList"><span class="bold">Worktodo</span> App</header>
+      <div class="todoListContainer">
+        <div class="inputBox">
+          <input
+            type="text"
+            placeholder="What to do today...?"
+            name="todoInput"
+            id="todoInput"
+          />
+          <button class="addBtn">+</button>
+        </div>
+
+        <h2 class="allTasks">Tasks</h2>
+        <span class="totalTasks">Total Tasks: 0</span>
+        <span class="completedTasks">Completed Tasks: 0</span>
+        <div class="taskBox">
+          <!-- Data will dynamically append here -->
+          <!-- <div class="task">
+            <input type="checkbox" />
+            <input class="text" value="Ashish Sharma" readonly />
+            <button class="taskDone">Delete</button>
+          </div> -->
+        </div>
+      </div>
+      <footer class="copyright">
+        <p class="copyrightContent">
+          Coded by
+          <a
+            target="_blank"
+            href="https://personalportfoliotheme.ashishsharma56.repl.co/"
+            >Ashish Sharma</a
+          >
+          Check
+          <a
+            target="_blank"
+            href="https://github.com/ashishsharma-dev/Worktodo-App"
+          >
+            GitHub Repo Here <i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="assets/script.js"></script> -->
+    <script src="assets/main.js"></script>
+  </body>
+</html>

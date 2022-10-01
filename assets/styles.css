@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-y: hidden;
+  transition: all 0.3s;
+}
+
+#daymode {
+  background-color: #ddd;
+  color: #023047;
+}
+#daymodeInputTask {
+  background-color: #737373;
+  color: #333;
+}
+
+.userName,
+.greetings {
+  color: #ddd;
+  opacity: 0.7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+
+  font-size: 1.4rem;
+  background: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.nightmode-toggler {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  padding-top: 1rem;
+  color: #ddd;
+}
+.nav-section {
+  background-color: #023047;
+  /*   padding: 0.5rem; */
+  /*text-align:left;*/
+}
+
+.container {
+  width: 100%;
+  height: 100vmax;
+  display: flex;
+  /*   justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #023047;
+}
+.todoList {
+  font-size: 2.5rem;
+  letter-spacing: 1.1px;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 5px;
+  font-weight: 700;
+  color: #8ecae6;
+}
+.bold {
+  color: #ddd;
+}
+.todoListContainer {
+  width: 95%;
+  max-width: 800px;
+  height: 50vh;
+  margin-top: 1rem;
+  /* background-color: #c6cbef;
+  border: 1px solid; */
+}
+
+.allTasks {
+  font-size: 2rem;
+  color: #ddd;
+  margin-left: 5px;
+}
+.inputBox input {
+  width: auto;
+  width: -webkit-fill-available;
+  width: -moz-available;
+
+  outline: none;
+  padding: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*   background-color: #fff; */
+  margin: 5px;
+
+  border-radius: 1rem;
+  background-color: #28282b;
+  /* border: 1px solid #fff; */
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.inputBox {
+  position: relative;
+}
+.addBtn {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 1rem;
+  position: absolute;
+  background-color: #ddd;
+  border: none;
+  color: #28282b;
+  font-size: 1.5rem;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.taskBox {
+  margin: 5px;
+  height: 380px;
+  overflow-y: scroll;
+}
+.taskBox::-webkit-scrollbar {
+  display: none;
+}
+.task {
+  font-size: 1.3rem;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  background-color: #28282b;
+  border-radius: 10px;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+  /* width: 10px;
+  height: 10px; */
+  accent-color: #65665f;
+}
+
+.text {
+  appearance: none;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  outline: none;
+  color: #ddd;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: 0.2s ease-in;
+}
+
+.text:focus {
+  color: #fff;
+  opacity: 0.6;
+}
+input:checked + .text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.totalTasks,
+.completedTasks {
+  font-size: 0.8rem;
+  color: #717171;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 7px;
+  font-weight: 700;
+}
+
+.taskEditSaveBtn {
+  position: absolute;
+  right: 80px;
+  top: 18px;
+  border: none;
+  background: none;
+  color: #717171;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.taskDone {
+  position: absolute;
+  right: 9px;
+  top: 18px;
+  border: none;
+  background: none;
+  color: #d33754;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  font-size: 0.8rem;
+  color: #717171;
+}
+
+.copyrightContent a {
+  /*   text-decoration: none; */
+  color: inherit;
+}
+
+/* Media Queries */
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .text {
+    width: 185px;
+    margin-left: 5px;
+  }
+
+  .taskBox {
+    height: 63%;
+  }
+
+  .todoListContainer {
+    height: 88vh;
+  }
+
+  .nightmode-toggler {
+    display: flex;
+    align-items: center;
+  }
+  .icons {
+    display: flex;
+  }
+  .greetings {
+    font-size: 1.1rem;
+  }
+  .userName {
+    font-size: 1.3rem;
+  }
+  #night {
+    margin-left: 0.7rem;
+  }
+}
+
+/* Small screen devices (600px and above) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .text {
+    width: 600px;
+    margin-left: 5px;
+  }
+
+  .taskBox {
+    height: 80%;
+  }
+}
+
+/* Big screen devices (889px and above) */
+/* @media only screen and (min-width: 889px) {...} */
+
+/* Extra big screen devices (1200px and above) */
+/* @media only screen and (min-width: 1200px) {...} */
