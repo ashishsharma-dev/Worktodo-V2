@@ -239,6 +239,7 @@ input:checked + .text {
   }
   .userName {
     font-size: 1.3rem;
+    width: 170px;
   }
   #night {
     margin-left: 0.7rem;
